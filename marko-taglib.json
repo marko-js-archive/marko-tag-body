@@ -1,0 +1,18 @@
+{
+    "tags": {
+        "*": {
+            "attributes": {
+                "tag-body": {
+                    "type": "custom",
+                    "ignore": true
+                }
+            },
+            "transformer": {
+                "path": "./src/tag-body-transformer"
+            }
+        }
+    },
+    "<tag-body>": {
+        "node-class": "./src/tag-body-node.js"
+    }
+}
