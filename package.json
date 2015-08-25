@@ -1,17 +1,17 @@
 {
-  "name": "marko-tag-body",
-  "version": "1.0.0",
-  "description": "",
-  "scripts": {
-    "test": "mocha --ui bdd --reporter spec ./test && npm run jshint",
-    "jshint": "jshint src/"
-  },
-  "author": "Patrick Steele-Idem <pnidem@gmail.com>",
-  "license": "ISC",
-  "devDependencies": {
-    "chai": "^3.2.0",
-    "jshint": "^2.5.0",
-    "marko": "^2.7.16",
-    "mocha": "^2.2.5"
-  }
+    "name": "marko-tag-body",
+    "description": "",
+    "scripts": {
+        "test": "mocha --ui bdd --reporter spec ./test && npm run jshint",
+        "jshint": "jshint src/"
+    },
+    "author": "Patrick Steele-Idem <pnidem@gmail.com>",
+    "license": "ISC",
+    "devDependencies": {
+        "chai": "^3.2.0",
+        "jshint": "^2.5.0",
+        "marko": "^2.7.16",
+        "mocha": "^2.2.5"
+    },
+    "version": "1.0.1"
 }
