@@ -12,7 +12,7 @@ module.exports = function transform(node, compiler, template) {
     }
 
     if (bodyExprIor != null) {
-        node.removeAttribute('tag-body-or');
+        node.removeAttribute('body-ior');
 
         node.appendChild(compiler.createNode('tag-body', {
             body: 'data.renderBody || ' + bodyExprIor
