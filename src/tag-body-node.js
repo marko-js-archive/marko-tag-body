@@ -9,7 +9,6 @@ function TagBodyNode(props) {
 TagBodyNode.prototype = {
     doGenerateCode: function (template) {
         var compiler = template.compiler;
-
         var tagBodyHelperVar = template.addStaticVar('tagBody', 'require(' + JSON.stringify(compiler.getRequirePath(helperModulePath)) + ')');
         template.statement(tagBodyHelperVar + '(out, ' + this.getProperty('body') + ');');
     }

@@ -1,13 +1,15 @@
 marko-tag-body
 ==============
 
-# Installation
+Installation
+============
 
 ```
 npm install marko-tag-body --save
 ```
 
-# Usage
+Usage
+=====
 
 ```xml
 <div>
@@ -54,3 +56,14 @@ Output:
     </p>
 </div>
 ```
+
+Convenience variant
+-------------------
+
+For convenience, an `-or` variant has been introduced so that:
+
+`tag-body-or="data.body"`
+
+Will be equivalent to:
+
+`tag-body="data.renderBody || data.body"`
