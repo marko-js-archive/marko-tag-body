@@ -1,20 +1,29 @@
 module.exports = function transform(node, compiler, template) {
-    var bodyExpression = node.getAttribute('tag-body');
-    var bodyExpressionOr = node.getAttribute('tag-body-or');
+    var bodyExp = node.getAttribute('tag-body');
+    var bodyExpOr = node.getAttribute('body-or');
+    var bodyExprIor = node.getAttribute('body-ior');
 
-    if (bodyExpression != null) {
+    if (bodyExpr != null) {
         node.removeAttribute('tag-body');
 
         node.appendChild(compiler.createNode('tag-body', {
-            body: bodyExpression || 'data.renderBody'
+            body: bodyExpr || 'data.renderBody'
         }));
     }
 
-    if (bodyExpressionOr != null) {
+    if (bodyExprIor != null) {
         node.removeAttribute('tag-body-or');
 
         node.appendChild(compiler.createNode('tag-body', {
-            body: bodyExpression + ' || data.renderBody'
+            body: 'data.renderBody ||' bodyExprIor;
+        }));
+    }
+
+    if (bodyExprOr != null) {
+        node.removeAttribute('body-or');
+
+        node.appendChild(compiler.createNode('tag-body', {
+            body: bodyExprOr + ' || data.renderBody'
         }));
     }
 };
