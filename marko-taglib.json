@@ -8,11 +8,11 @@
                 }
             },
             "transformer": {
-                "path": "./src/tag-body-transformer"
+                "path": "./src-marko-v2/tag-body-transformer"
             }
         }
     },
     "<tag-body>": {
-        "node-class": "./src/tag-body-node.js"
+        "node-class": "./src-marko-v2/tag-body-node.js"
     }
 }

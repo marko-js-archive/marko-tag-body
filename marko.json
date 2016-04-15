@@ -1,0 +1,13 @@
+{
+    "tags": {
+        "*": {
+            "@tag-body": {
+                "type": "custom",
+                "ignore": true
+            },
+            "transformer": {
+                "path": "./src/tag-body-transformer"
+            }
+        }
+    }
+}

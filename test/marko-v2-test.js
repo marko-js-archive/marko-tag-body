@@ -4,7 +4,7 @@ var expect = require('chai').expect;
 
 describe('marko-tag-body', function() {
     it('should work with a tag-body attribute that has a value', function() {
-        var template = require('marko').load(require.resolve('./fixtures/simple.marko'));
+        var template = require('marko-v2').load(require.resolve('./fixtures/marko-v2/simple.marko'));
         var output = template.renderSync({
             message: 'Body from message'
         });
@@ -19,7 +19,7 @@ describe('marko-tag-body', function() {
     });
 
     it('should work with a tag-body attribute that does not have a value', function() {
-        var template = require('marko').load(require.resolve('./fixtures/attr-no-value.marko'));
+        var template = require('marko-v2').load(require.resolve('./fixtures/marko-v2/attr-no-value.marko'));
 
         var output = template.renderSync({
             renderBody: function(out) {
