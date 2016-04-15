@@ -1,17 +1,31 @@
 {
-    "name": "marko-tag-body",
-    "description": "",
-    "scripts": {
-        "test": "mocha --ui bdd --reporter spec ./test && npm run jshint",
-        "jshint": "jshint src/"
-    },
-    "author": "Patrick Steele-Idem <pnidem@gmail.com>",
-    "license": "ISC",
-    "devDependencies": {
-        "chai": "^3.2.0",
-        "jshint": "^2.5.0",
-        "marko": "^2.7.16",
-        "mocha": "^2.2.5"
-    },
-    "version": "1.0.1"
+  "name": "marko-tag-body",
+  "description": "Marko helper to easily injected nested body content",
+  "scripts": {
+    "test": "mocha --ui bdd --reporter spec ./test && npm run jshint",
+    "jshint": "jshint src/"
+  },
+  "author": "Patrick Steele-Idem <pnidem@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "marko": "^2.7.16",
+    "mocha": "^2.4.5"
+  },
+  "version": "1.0.1",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^3.2.0",
+    "jshint": "^2.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marko-js/marko-tag-body.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marko-js/marko-tag-body/issues"
+  },
+  "homepage": "https://github.com/marko-js/marko-tag-body#readme"
 }
