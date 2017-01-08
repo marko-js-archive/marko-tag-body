@@ -18,7 +18,7 @@ npm install marko-tag-body --save
 ```
 
 ```javascript
-template.renderSync({
+template.renderToString({
         body: 'My body content'
     });
 ```
@@ -34,10 +34,10 @@ Output:
 </div>
 ```
 
-A `renderBody()` function is passed as part of the input to the template: 
+A `renderBody()` function is passed as part of the input to the template:
 
 ```javascript
-template.renderSync({
+template.renderToString({
         renderBody: function(out) {
             out.write('My body content')
         }
@@ -68,7 +68,7 @@ If the value of the `tag-body` is left blank then it will default to `data.rende
 ```
 
 ```javascript
-template.renderSync({
+template.renderToString({
         renderBody: function(out) {
             out.write('My body content')
         }
